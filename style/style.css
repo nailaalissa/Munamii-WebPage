@@ -161,10 +161,7 @@ main .menu{
         color: #0dac30;
         text-shadow: 0 1px 2px rgba(0, 0, 0,0,15);
       }
-      /*
-a:visited {
-    color: #191919;
-    transition: color .12s ease-out 0s;}*/
+
   
 .search-container{
     position: absolute;
@@ -172,45 +169,47 @@ a:visited {
     right:25px;
  
  }  
-
-#searchButton {
-width: 75px;
-height: 75px;
-border-radius: 50%;
-box-shadow: 20px 20px 70px grey;
-border: 1px solid  #fff ;
-
- }
- #searchButton:hover{
-  box-shadow: 20px 20px 50px 15px grey;
-
- }   
- #searchBar {
-    position: relative;
-     top: 600px; 
-     right: 20px;
-     transform: translate(-50%, -50%);
+ #searchButton {
+ 
+   
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 20px 20px 70px grey;
+    border: 1px solid #fff;
+  }
+  
+  #searchButton:hover {
+    box-shadow: 20px 20px 50px 15px grey;
+  }
+  
+  #searchBar {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none;
-      }
-      
-#searchBar input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        display: none;
-      }
-
-    #closeButton {
-        display: none;
-        background-color: #ff4500;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-      }
-
+    width: 90%; 
+    max-width: 60%; 
+    padding: 20px; 
+    z-index: 1;
+  }
+  
+  #searchBar input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #closeButton {
+    background-color:#0dac30;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
 .Featured-Product{
     width: 60%;
     margin-left: 20%;
@@ -527,3 +526,9 @@ margin-bottom: 1rem;
          }
     
     }
+
+
+ 
+      
+
+

@@ -44,14 +44,14 @@
 <main>  
   
     <div class="search-container">
-        <button id="searchButton" >
+        <button id="searchButton" onclick="toggleSearchBar()">
         <a href="/search" class="ec-minicart__icon" aria-label="Search products">
                         <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" fill="none" fill-rule="evenodd"><path d="M21 25c5.523 0 10-4.477 10-10S26.523 5 21 5 11 9.477 11 15s4.477 10 10 10z" stroke-width="2"></path><path d="M13.514 22.486L5.5 30.5" stroke-width="3" stroke-linecap="round"></path></g></svg>
                     </a>
                   </button>
         <div id="searchBar" class="hidden">
           <input type="text" placeholder="Type your search...">
-          <button id="closeButton">Close</button>
+          <button id="closeButton" onclick="closeSearchBar()">Close</button>
       
         </div>
       </div>
@@ -76,7 +76,7 @@
       Hello! Welcome to Munamii Cakery! We offer you the most delicious cakes and cupcakes for all kinds of events and celebrations. Browse around to discover what you would like to buy.<h2>Featured Products</h2>
      <div class="Featured-cake">
       <div class="month-cake">
-        <a class="product" href="store.html">
+        <a class="product" href="buy.html">
             <img src="images/torte2.jpg" alt="Month Baby Cake"/>
             <div class="info">
             <p>WeedingCake</p>
@@ -86,7 +86,7 @@
         </a>
      </div>
      <div class="month-cake">
-      <a class="product" href="store.html">
+      <a class="product" href="buy.html">
           <img src="images/weeding.jpg" alt="Month Baby Cake"/>
           <div class="info">
           <p>Month Baby Cake</p>
