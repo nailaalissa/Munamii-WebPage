@@ -1,38 +1,33 @@
-/*
-document.getElementByClass('searchButton').addEventListener('click', function() {
-  document.getElementByClass('searchBar').style.display = 'block';
-});
-
-document.getElementById('closeButton').addEventListener('click', function() {
-  document.getElementById('searchBar').style.display = 'none';
-});
-
-
-
-function toggleSearch() {
-  const searchBar = document.querySelector('.searchBar');
-  searchBar.style.display = searchBar.style.display === 'none' ? 'block' : 'none';
+// function to open search bar and close it with lisner to search button
+function toggleSearchBar() {
+  let searchBar = document.getElementById('searchBar');
+  if (searchBar) {
+    searchBar.style.display = (searchBar.style.display === 'none' || searchBar.style.display === '') ? 'block' : 'none';
+  }
 }
 
-function closeSearch() {
-  const searchBar = document.querySelector('.searchBar');
-  searchBar.style.display = 'none';
+function closeSearchBar() {
+  let searchBar = document.getElementById('searchBar');
+  if (searchBar) {
+    searchBar.style.display = 'none';
+  }
+}
+
+let input = document.getElementById("search-input");
+let searchBtn = document.getElementById("searchButton");
+
+if (searchBtn && input) {
+  const expand = () => {
+    searchBtn.classList.toggle("close");
+    input.classList.toggle("square");
+  };
+
+  searchBtn.addEventListener("click", expand);
 }
 
 
 
-// updated 2019
-const input = document.getElementById("search-input");
-const searchBtn = document.getElementById("search-btn");
-
-const expand = () => {
-  searchBtn.classList.toggle("close");
-  input.classList.toggle("square");
-};
-
-searchBtn.addEventListener("click", expand);
-*/
-
+// function show the message in contact us form
 function showMessage() {
   // Retrieve input values
   const name = document.getElementById("name").value;
@@ -49,7 +44,7 @@ function showMessage() {
 
   document.getElementById("messageContainer").innerHTML = message;
 
-  // Prevent form submission
+  // fuction to close and open the navbar in the header 
   event.preventDefault();
 }
   function openNavbar() {
@@ -60,3 +55,7 @@ function openNavbar() {
   const navMenu = document.getElementById("nav-menu");
   navMenu.classList.toggle("active");
 }
+
+
+
+
