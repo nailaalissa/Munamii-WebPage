@@ -171,12 +171,14 @@ main .menu{
  }  
  #searchButton {
  
-   
+   position: relative;
     width: 75px;
     height: 75px;
     border-radius: 50%;
     box-shadow: 20px 20px 70px grey;
     border: 1px solid #fff;
+    scale: (0,8);
+   
   }
   
   #searchButton:hover {
