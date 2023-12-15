@@ -150,7 +150,7 @@ nav ul li a:hover {
 .grid-item {
     border: 1px solid #f7f7f7;
     width: 23%;
-    height: 400px;
+/*     height: 400px; */
     background-color: #f7f7f7;
     box-shadow: 5px 5px 10px rgb(218, 216, 216);
 }
