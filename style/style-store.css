@@ -147,7 +147,7 @@ nav ul li a:hover {
     transition: #f7f7f7 0.3s ease; 
    }
  
-.grid-item {
+.cupcakes .grid-item, .tortas .grid-item{
     border: 1px solid #f7f7f7;
     width: 23%;
 /*     height: 400px; */
