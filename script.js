@@ -6,6 +6,7 @@ function toggleSearchBar() {
       searchBar.style.display === 'none' || searchBar.style.display === '' ? 'block' : 'none';
   }
 }
+// search button
 // to close search button window
 function closeSearchBar() {
   let searchBar = document.getElementById('searchBar');
