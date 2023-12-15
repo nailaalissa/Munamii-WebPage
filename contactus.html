@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/contactus-style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/contactus-style.css" />
     <title>Munamii Cakery</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo"><img src="images/logo.png"/></div>
-            <button class="hamburger" id="hamburger-icon">
-                <span onclick="openNavbar()"> ☰</span>
-            </button>
-        
-            <nav id="nav-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="store.html">Store</a></li>
-                    <li><a href="aboutus.html">About</a></li>
-                    <li><a href="location.html">Location</a></li>
-                </ul>
-            </nav>
-            <button class="reachUs-button">Call us</button>
-    </header> 
-      
+      <div class="logo"><img src="images/logo.png" /></div>
+      <button class="hamburger" id="hamburger-icon">
+        <span onclick="openNavbar()"> ☰</span>
+      </button>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </nav>
+      <button class="reachUs-button">Call us</button>
+    </header>
+
     <main>
-        <section class="banner">
-            <img src="images/contactus.png" alt="Welcome to our Contact Us page">
-            <h1>Get in Touch With Us</h1>
-            <p>We're here to answer any questions you may have.</p>
-        </section>
-      <!-- Messeg container after click button -->  
-        <div id="messageContainer" class="hidden"></div>
-    <!-- Contact form -->
-    <section class="contact-form">
+      <section class="banner">
+        <img src="images/contactus.png" alt="Welcome to our Contact Us page" />
+        <h1>Get in Touch With Us</h1>
+        <p>We're here to answer any questions you may have.</p>
+      </section>
+      <!-- Messeg container after click button -->
+      <div id="messageContainer" class="hidden"></div>
+      <!-- Contact form -->
+      <section class="contact-form">
         <div class="form-container">
-            <h2>Your Details</h2>
-            <form action="#" method="POST">
+          <h2>Your Details</h2>
+          <form action="#" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" />
 
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" >
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" />
 
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" >
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" />
 
-                <label for="phone">Phone: </label>
-                <input type="tel" id="phone" name="phone">
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="4"></textarea>
 
-                <label for="message">Message: </label>
-                <textarea id="message" name="message" rows="4" ></textarea>
-
-                <button type="submit" class="submit-button" onclick= showMessage()>Submit</button>
-            </form>
+            <button type="submit" class="submit-button" onclick="showMessage()">Submit</button>
+          </form>
         </div>
-    </section>
- 
-</main>
+      </section>
+    </main>
 
     <footer>
-        <ul class="social-icons">
-          <li><a href="https://www.facebook.com/munamii_cakery" target="_blank"><img src="images/facebook.svg" alt="Facebook"><p>munamiicupcakes</p></a></li>
-          <li><a href="https://www.instagram.com/munamii_cakery" target="_blank"><img src="images/instagram.svg" alt="Instagram"><p>@munamii.cakery</p></a></li>
-          <li><a href="https://wa.me/1234567890" target="_blank"><img src="images/whatsapp-circle.svg" alt="WhatsApp"> <p>WhatsApp</p></a></li>
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.facebook.com/munamii_cakery" target="_blank"
+            ><img src="images/facebook.svg" alt="Facebook" />
+            <p>munamiicupcakes</p></a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/munamii_cakery" target="_blank"
+            ><img src="images/instagram.svg" alt="Instagram" />
+            <p>@munamii.cakery</p></a
+          >
+        </li>
+        <li>
+          <a href="https://wa.me/1234567890" target="_blank"
+            ><img src="images/whatsapp-circle.svg" alt="WhatsApp" />
+            <p>WhatsApp</p></a
+          >
+        </li>
       </ul>
       <div class="contact-email">
-        <a href="contactus.html"> <img src="images/contact.jpeg" alt="Facebook"><p> Contact us</p></a>
+        <a href="contactus.html">
+          <img src="images/contact.jpeg" alt="Facebook" />
+          <p>Contact us</p></a
+        >
       </div>
-      </footer>
-      <div class="footer">
-		<p> &copy; 2023 Munamii Cakery</p>
-  </div>
-    <script src="script.js"> 
-
-    </script>
-</body>
-
+    </footer>
+    <div class="footer">
+      <p>&copy; 2023 Munamii Cakery</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

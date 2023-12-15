@@ -13,7 +13,7 @@ function closeSearchBar() {
     searchBar.style.display = 'none';
   }
 }
-
+// when click open the search bar
 let input = document.getElementById('search-input');
 let searchBtn = document.getElementById('searchButton');
 
@@ -26,7 +26,6 @@ if (searchBtn && input) {
   searchBtn.addEventListener('click', expand);
 }
 
-// function show the message in contact us form
 function showMessage() {
   // Retrieve input values
   const name = document.getElementById('name').value;
@@ -38,14 +37,20 @@ function showMessage() {
   document.getElementById('messageContainer').classList.remove('hidden');
 
   // Set the message content
-  const message = `Thanks for your interest, ${name} !.... We will get in touch with you soon as soon as possible.<br>
+  const message = `Thanks for your interest, ${name}! We will get in touch with you as soon as possible.<br>
                     by Email: ${email}`;
 
+  // Scroll to the top of the page
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Set the message content after scrolling to the top
   document.getElementById('messageContainer').innerHTML = message;
 
-  // fuction to close and open the navbar in the header
+  // Prevent the default form submission
   event.preventDefault();
 }
+
+// open nav bar function
 function openNavbar() {
   const navMenu = document.getElementById('nav-menu');
   navMenu.classList.toggle('active');
