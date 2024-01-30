@@ -1,4 +1,4 @@
-<h1><a href="https://nailaalissa.github.io/Munamii-WebPage/index.html">Munamii Cakery Website</a></h1>
+<a href="https://nailaalissa.github.io/Munamii-WebPage/index.html">Munamii Cakery Website</a>
 Welcome to the Munamii Cakery website repository! This project is a small, responsive website designed to showcase and provide information about Munamii Cakery's delicious cakes and cupcakes. 
 
 
